@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning HTML</title>
+    <meta charset="utf-8"/>
+    <!--head tag is not displayed in the browser-->
+    <!-- utf-8 is universal characterset includes any character from any language,your webpage will be able to handle displaying any language-->
+    <meta name="author" content="Codevolution"/>
+    <!--to set the  author of webpage-->
+    <meta name="description" content="html fundamentals">
+    <!--for SEO description-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--ensures your webppage adapts the width of the browswer and sets the initial state-->
+  </head>
+  <body>
+      <!--html elements-->
+    <h1>Hello 1</h1>
+    <h2>hello 2</h2>
+    <h3>hello 3</h3>
+    <h4>hello 4</h4>
+    <h5>hello 5</h5>
+    <h6>hello</h6>
+    <p>This is a paragraph</p>
+    <p>
+     <strong> Lorem ipsum </strong>dolor sit<em>amet consectetur</em> , adipisicing elit. <i>Suscipit dolore</i><br/><hr/>
+     <small>laudantium aliquam quaerat </small> beatae deleniti <mark>pariatur iste iusto</mark> <br/>
+      <del>nostrum </del>voluptas dicta optio<ins>repellendus reprehenderit</ins> , quibusdam autem,<br>
+      placeat officiis recusandae.H<sup>2</sup>O, H <sub>2</sub>SO<sub>4</sub>
+    </p>
+    <div>Block 1</div>
+    <!-- //block elements takes the entire width and starts from anew line -->
+    <div>Block 2</div>
+     <span>inline 1</span>
+       <!-- //inline element does not take entire width but only takes the necessary width and doesnot start from a new line -->
+    <span>inline 2</span>
+<ul>
+    <li>bread</li>
+    <li>milk</li>
+    <li>icecream</li>
+</ul>
+<ol>
+    <li>Code</li>
+    <li>Eat</li>
+    <li>Sleep</li>
+</ol>
+<dl>
+    <dt>Ice-cream</dt>
+    <dd>-A soft sweet frozen food</dd>
+</dl>
+<dl>
+    <!---defination list-->
+    <dt>
+        <!----defination term-->
+        Tea
+    </dt>
+    <dd>A hot drink</dd>
+    <!---definationdescription-->
+</dl>
+<!--html elements-->
+<!--html tags with  attributes-->
+<img src="logo.jpeg" width="200" height="200" alt="react-logo"/>
+<!--img tag and src ,width ,height, alt ,attribute-->
+<a href="https://google.com" target="_blank">Google</a>
+<a href="contact.html">Contact</a>
+<!--to create hyperlink  href  target="_blank"--opens the link in new tab attribute -->
+<!---TABLES-->
+<table>
+    <!---table heading-->
+    <thead>
+        <!---table row,1 row-->
+        <tr>
+            <!---th===columns,3 columns-->
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+        </tr>
+    </thead>
+        <tbody>
+<tr>
+    <!--table data which specifies data has to go inside each column,since we have 3 columns we specify 3 td tags-->
+    <td>Data 1</td>
+    <td>Data 2</td>
+    <td>Data 3</td>
+</tr>
+<tr>
+    <td>Data 4</td>
+    <td>Data 5</td>
+    <td>Data 6</td>
+</tr>
+<tr>
+    <td>Data 7</td>
+    <td>Data 8</td>
+    <td>Data 9</td>
+</tr>
+<!---added 3 rows to the table-->
+<!--A table with 3 column 3 row-->
+        </tbody>
+</table>
+<!---TABLES-->
+<!---FORM-->
+<form>
+    <!---for in label and id in input tag with same name is a good practice ,when we click on label it will focus on input element-->
+    <label for="UserName">UserName</label><br/>
+    <input type="text" id="UserName"/><br/>
+    <!---to collect larger text from user -->
+    <label for="about">About you</label><br/>
+    <textarea id="about"></textarea><br/>
+    <!---to collect larger text from user -->
+    <!--dropdown control-->
+    <label for="country">Country</label><br/>
+    <select id="country">
+        <option value="india">India</option>
+        <option value="singapore">Singapore</option>
+        <option value="vietnam">Vietnam</option>
+    </select><br/><br/>
+    <!--dropdown control-->
+    <!--radio button for users to select 1 value from many options-->
+    <label>Job Type</label><br/>
+    
+    <input type="radio" name="jobtype" value="parttime" id="parttime"/>
+<label for="parttime">Part time</label><br/>
+<input type="radio" name="jobtype" value="fulltime" id="fulltime"/>
+<label for="fulltime">Full time</label> <br/>
+<input type="radio" name="jobtype" value="contractual" id="contractual"/>
+<label for="contractual" >Contract</label></form><br/>
+<!--name is equal in all input bcoz they belongs to same group of label and value is the attribute what is send to the sever -->
+    <!--radio button for single select-->
+    <!---checkbox for multiple select-->
+    <label>Job Type</label><br/>
+    
+    <input type="checkbox" name="jobtypecb" value="parttime" id="parttimecb"/>
+<label for="parttimecb">Part time</label><br/>
+<input type="checkbox" name="jobtypecb" value="fulltime" id="fulltimecb"/>
+<label for="fulltimecb">Full time</label> <br/>
+<input type="checkbox" name="jobtypecb" value="contractual" id="contractualcb"/>
+<label for="contractualcb" >Contract</label></form><br/><br/>
+    <!---checkbox for multiple select-->
+    <button>Submit</button>
+</form>
+<!---FORM-->
+<!--html tags with attributes-->
+<!--Semantic Elements -->
+<!---A semantic element clearly describe their meaning in a human and machine-readable way-->
+<header></header>
+<!--header tag for header-->
+<nav></nav>
+<!---nav tag for navigation bar where you see links to home about us contact-->
+<section></section>
+<!--section tag for an intro,some contact info etc,which defines a section of a webpage-->
+<aside></aside>
+<!--aside tag is used to define content aside from main content,example--a side bar where you can highlight recent and featured blog post-->
+<article></article>
+<!--for blog posts, products cards,user comments, newspaper article--->
+<footer>
+    <!---links for webpage like privacy policy, links for social media-->
+</footer>
+<!---suggests the developer the type of data that will be populated and also helps search engines to influence the page search rankings, screen readers can use this as a sign post to help visually impaired users navigate a page-->
+<!--Semantic Elements -->
+
+  </body>
+</html>
